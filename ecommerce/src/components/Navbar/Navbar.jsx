@@ -25,7 +25,7 @@ const Navbar = () => {
                      tracking-widest text-2xl uppercase sm:text-3xl
                     "
                 >
-                  EShop
+                  ecommerce
                 </a>
                 {/* menu items */}
                 <div className="hidden lg:block">
