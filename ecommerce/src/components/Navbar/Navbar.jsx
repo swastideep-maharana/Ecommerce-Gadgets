@@ -71,7 +71,7 @@ const Navbar = () => {
                     </a>
                    
                     {/* Dropdown Links */}
-                    <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md">
+                    <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 text-black dark:text-white">
                         <ul className="space-y-2">
                            {
                             DropdownLinks.map((data, index) =>(
