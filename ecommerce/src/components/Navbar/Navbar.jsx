@@ -79,7 +79,8 @@ const Navbar = () => {
                           {DropdownLinks.map((data, index) => (
                             <li>
                               <a
-                                className="text-gray-500 hover:text-black dark:hover:text-white duration-200"
+                                className="text-gray-500 dark:hover:text-white duration-200
+                                inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold"
                                 href={data.link}
                               >
                                 {data.name}
