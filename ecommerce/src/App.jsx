@@ -10,6 +10,8 @@ import headphone from "./assets/hero/headphone.png";
 import smartwatch from "./assets/category/smartwatch2-removebg-preview.png";
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
+import Partners from "./components/Partners/Partners.jsx";
+import Footer from "./components/Footer/Footer.jsx"
 
 const BannerData = {
   discount: '30% OFF',
@@ -46,6 +48,8 @@ function App() {
         <Products />
         <Banner data={BannerData2} />
         <Blogs />
+        <Partners />
+        <Footer />
       </div>
     </>
   );
