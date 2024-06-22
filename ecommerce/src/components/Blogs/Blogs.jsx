@@ -13,6 +13,7 @@ const BlogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Dilshad",
     image: Img1,
+    aosDelay: "0"
   },
   {
     title: "How to choose perfect gadget",
@@ -20,6 +21,7 @@ const BlogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Satya",
     image: Img2,
+    aosDelay: "200"
   },
   {
     title: "How to choose perfect VR headset",
@@ -27,6 +29,7 @@ const BlogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Sabir",
     image: Img3,
+    aosDelay: "400"
   },
 ];
 
@@ -42,7 +45,8 @@ const Blogs = () => {
           {/* blog card */}
           {
             BlogData.map((data) => (
-              <div key={data.title} className="bg-white dark:bg-gray-900">
+              <div data-aos="fade-up"
+              data-aos-delay={data.aosDelay} key={data.title} className="bg-white dark:bg-gray-900">
                 {/* image section */}
                 <div className="overflow-hidden rounded-2xl mb-2">
                     <img src={data.image} alt="" 
